@@ -49,7 +49,7 @@ module JSONAPI
     end
 
     def is_new?
-      id.nil?
+      _model.new_record?
     end
 
     def change(callback)
